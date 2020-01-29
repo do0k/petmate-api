@@ -4,7 +4,7 @@
   "description": "A simple api for pet services app",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -36,6 +36,7 @@
     "mongo-connect": "0.0.6",
     "mongodb": "^3.5.2",
     "mongoose": "^5.8.9",
+    "nodemon": "^2.0.2",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0"
   }
