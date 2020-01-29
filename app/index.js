@@ -24,10 +24,9 @@ module.exports = class Application {
 		app.use(bodyParser.urlencoded({ extended: true }))
 		
 		app.get('/', (req, res) => {
-			res.json({
-				status: 'OK',
-				data: 'Hello World!'
-			})
+			res.return(`
+				<b>Hello</b>
+			`)
 		})
 	}
 }
