@@ -12,7 +12,7 @@ module.exports = class Application {
 	
 	setupExpress() {
 		const server = http.createServer(app)
-		server.listen(8001, () => console.log('Server running on port 8001'))
+		server.listen(80, () => console.log('Server running on port 80'))
 	}
 	
 	setConfig() {
