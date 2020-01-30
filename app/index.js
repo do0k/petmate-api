@@ -4,6 +4,8 @@ const http = require('http')
 const bodyParser = require('body-parser')
 const path = require('path')
 
+const PORT = process.env.PORT || 8001
+
 module.exports = class Application {
 	constructor() {
 		this.setupExpress()
@@ -12,7 +14,7 @@ module.exports = class Application {
 	
 	setupExpress() {
 		const server = http.createServer(app)
-		server.listen(8000, () => console.log('Server running on port 8000'))
+		server.listen(PORT, () => console.log(`Server running on port ${PORT}`))
 	}
 	
 	setConfig() {
